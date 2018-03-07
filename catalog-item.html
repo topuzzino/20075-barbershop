@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Страница товара барбершопа "Бородинский"</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+	    <nav class="main-navi">
+		    <!-- Зачем нужен контейнер <a> для логотипа? -->
+		    <a href="index.html" class="main-header-logo">
+			    <!-- Вопреки макету мы разметим логотип на главной странице так же, как и на внутренних – внутри шапки -->
+			    <img src="img/logo-barbershop-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+			</a>
+		    <ul class="site-navigation">
+			    <li><a href="info.html">Информация</a></li>
+			    <li><a href="news.html">Новости</a></li>
+			    <li><a href="price.html">Прайс-лист</a></li>
+			    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+			    <li><a href="contact.html">Контакт</a></li>
+		    </ul>
+		    <!-- Сейчас в макете только кнопка входа. 
+			     Когда пользоватеть залогинится, могут появиться дополнительные ссылки и кнопки. 
+			     Неупорядоченный список подойдет для этого элемента -->
+		    <ul class="user-navigation">
+			    <li class="login-link">Вход</li>
+		    </ul>
+	    </nav>
+    </header>
+    
+    <main class="container">
+	    <h1 class="page-title">Набор для путешествий "Baxter of California"</h1>
+	    <!-- Хлебные крошки -->
+	    <ul class="breadcrumbs">
+		    <li><a href="index.html">Главная</a></li>
+		    <li><a href="catalog.html">Магазин</a></li>
+		    <li><a href="#">Средства для ухода</a></li>
+		    <li class="breadcrumbs-current">Набор для путешествий "Baxter of California"</li>
+	    </ul>
+	    
+	    <section class="product-photos">
+		    <h2 class="visually-hidden">Изображение товара</h2>
+		    <!-- Опять этот гребаный <p>. Аргументируется его использование тем, что "Эта фотография товара — его визуальное описание" -->
+		    <!-- Большая фотка -->
+		    <p class="product-photo-full">
+		    	<img src="img/product-big.jpg" width="460" height="498" alt="Фото всего набора">
+		    </p>
+		    <!-- Три маленьких фотки - почему-то опять списком. А можно их сделать дивом или секцией? -->
+		    <ul class="product-photo-preview">
+			    <li><img src="img/product-small-1.jpg" width="140" height="149" alt="Фото в анфас"></li>
+			    <li><img src="img/product-small-2.jpg" width="140" height="149" alt="Фото в профиль"></li>
+			    <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
+			</ul>
+	    </section>
+	    
+	    <section class="product-info">
+		    <h2 class="visually-hidden">Описание товара</h2>
+		    <p class="product-availability">Есть в наличии</p>
+			<span class="product-article">Артикул: dexter-ae</span>
+			<p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+			<div class="catalog-item-price">
+				<span class="catalog-item-price">2900 P</span>
+				    <span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				</div>
+			<h3>В набор входят:</h3>
+			<ul>
+	          <li>Средство для умывания (50 мл)</li>
+	          <li>Увлажняющий крем (50 мл)</li>
+	          <li>Крем для бритья (50 мл)</li>
+	          <li>Крем после бритья, шампунь (50 мл)</li>
+	          <li>Удобная кожаная косметичка</li>
+        	</ul>
+	    </section>
+	    
+	    
+	    
+	    
+	</main>
+	
+	<footer class="main-footer">
+	    <p class="footer-contacts">
+        	Барбершоп «Бородинский»<br>
+			Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+			<a href="map.html">Как нас найти?</a><br>
+			Телефон: +7 (812) 666-02-66
+      	</p>
+      	
+      	<div class="footer-social">
+	      	<b>Давайте дружить!</b>
+	      	<ul>
+		      	<li><a href="#" class="social-button">Вконтакте</a></li>
+		      	<li><a href="#" class="social-button">Фейсбук</a></li>
+			  	<li><a href="#" class="social-button">Инстаграм</a></li>
+			</ul>
+      	</div>
+      	
+      	<p class="footer-copyright">
+	      	<b>Разработано:</b>
+	      	<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+      	</p>
+    </footer>
+    
+    <!-- Попап для входа в личный кабинет -->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<!-- Здесь будет форма -->
+		<!-- Иконка для закрытия окна -->
+		<span class="modal-close">x</span>
+	</section>
+    
+  </body>
+</html>

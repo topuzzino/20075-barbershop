@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог барбершопа "Бородинский"</title>
+  </head>
+  <body>
+
+    <header class="main-header">
+	    <nav class="main-navi">
+		    <!-- Зачем нужен контейнер <a> для логотипа? -->
+		    <a href="index.html" class="main-header-logo">
+			    <!-- Вопреки макету мы разметим логотип на главной странице так же, как и на внутренних – внутри шапки -->
+			    <img src="img/logo-barbershop-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+			</a>
+		    <ul class="site-navigation">
+			    <li><a href="info.html">Информация</a></li>
+			    <li><a href="news.html">Новости</a></li>
+			    <li><a href="price.html">Прайс-лист</a></li>
+			    <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+			    <li><a href="contact.html">Контакт</a></li>
+		    </ul>
+		    <!-- Сейчас в макете только кнопка входа. 
+			     Когда пользоватеть залогинится, могут появиться дополнительные ссылки и кнопки. 
+			     Неупорядоченный список подойдет для этого элемента -->
+		    <ul class="user-navigation">
+			    <li class="login-link">Вход</li>
+		    </ul>
+	    </nav>
+    </header>
+    
+    <main class="container">
+	    <!-- Почему на первой странице для <h1> не прописан класс, а тут прописан? -->
+	    <h1 class="page-title">Средства для ухода</h1>
+	    <!-- Хлебные крошки -->
+	    <ul class="breadcrumbs">
+		    <li><a href="index.html">Главная</a></li>
+		    <li><a href="catalog.html">Магазин</a></li>
+		    <li class="breadcrumbs-current">Средства для ухода</li>
+	    </ul>
+	    
+	    <!-- Секция с фильтрами -->
+	    <section class="filters">
+		    <h2 class="visually-hidden">Фильтр товаров</h2>
+		    <!-- Здесь будет форма -->
+	    </section>
+	    
+	    <!-- Секция с товарами -->
+	    <section class="catalog">
+		    <h2 class="visually-hidden">Список средств для ухода</h2>
+		    <ul class="catalog-list">
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<!-- Почему хедлайн делается двумя спанами 
+						    вместо того, чтобы одним <h3> с разделением строчек <br> -->
+					    	<span class="catalog-category">Набор для путешествий</span>
+							<span class="catalog-item-title">«Baxter of California»</span>
+						</a>
+					</h3>
+					<!-- Почему здесь <p>? Тут же нет никакого текста? -->
+					<p class="catalog-item-image">
+						<a href="catalog-item.html">
+			    			<img src="img/product01.jpg" width="220" height="165" alt="Набор для путешествий «Baxter of California»">
+			    		</a>
+			    	</p>
+			    	
+			    	<!-- Какого хрена тут опять <p>? Этому же нет никакого обьяснения -->
+			    	<p class="catalog-item-price">
+				    	<!-- Почему тут <b>????? Это же <span> -->
+				    	<b>2900 P</b>
+				    	<a href="#" class="button">Купить</a>
+				    </p>
+			    	
+			    	<!-- Я эту часть обернула бы дивом, поскольку он бы содержал два разных элемента, не связанных с собой, 
+				    	 а потом каждый элемент внутри него сделала бы спаном. Так нельзя?
+			    	<div class="catalog-item-info">
+				    	<span class="catalog-item-price">2900 р</span>
+				    	<span class="catalog-item-button">Купить</span>
+			    	</div>
+			    	-->
+			    </li>
+			    <!-- Карточка товара НОМЕР ДВА -->
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<span class="catalog-category">Увлажняющий кондиционер</span>
+							<span class="catalog-item-title">«Baxter of California»</span>
+						</a>
+					</h3>
+					<a href="catalog-item.html" class="catalog-item-image">
+			    		<img src="img/product02.jpg" width="220" height="165" alt="Увлажняющий кондиционер "Baxter of California"">
+			    	</a>
+			    	<div class="catalog-item-price">
+				    	<span class="catalog-item-price">750 P</span>
+				    	<span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				    </div>
+			    </li>
+			    <!-- Карточка товара НОМЕР ТРИ -->
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<span class="catalog-category">Гель для волос</span>
+							<span class="catalog-item-title">«SUAVECITO»</span>
+						</a>
+					</h3>
+					<a href="catalog-item.html" class="catalog-item-image">
+			    		<img src="img/product03.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
+			    	</a>
+			    	<div class="catalog-item-price">
+				    	<span class="catalog-item-price">290 P</span>
+				    	<span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				    </div>
+			    </li>
+			    <!-- Карточка товара НОМЕР ЧЕТЫРЕ -->
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<span class="catalog-category">Глина для укладки волос</span>
+							<span class="catalog-item-title">«American crew»</span>
+						</a>
+					</h3>
+					<a href="catalog-item.html" class="catalog-item-image">
+			    		<img src="img/product04.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
+			    	</a>
+			    	<div class="catalog-item-price">
+				    	<span class="catalog-item-price">500 P</span>
+				    	<span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				    </div>
+			    </li>
+			    <!-- Карточка товара НОМЕР ПЯТЬ -->
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<span class="catalog-category">Гель для волос</span>
+							<span class="catalog-item-title">«American crew»</span>
+						</a>
+					</h3>
+					<a href="catalog-item.html" class="catalog-item-image">
+			    		<img src="img/product05.jpg" width="220" height="165" alt="Гель для волос «American crew»">
+			    	</a>
+			    	<div class="catalog-item-price">
+				    	<span class="catalog-item-price">300 P</span>
+				    	<span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				    </div>
+			    </li>
+			    <!-- Карточка товара НОМЕР ШЕСТЬ -->
+			    <li class="catalog-item">
+			    	<h3>
+				    	<a href="catalog-item.html">
+					    	<span class="catalog-category">Набор для бритья</span>
+							<span class="catalog-item-title">«Baxter of California»</span>
+						</a>
+					</h3>
+					<a href="catalog-item.html" class="catalog-item-image">
+			    		<img src="img/product06.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
+			    	</a>
+			    	<div class="catalog-item-price">
+				    	<span class="catalog-item-price">3900 P</span>
+				    	<span class="catalog-item-button"><a href="#" class="button">Купить</a></span>
+				    </div>
+			    </li>
+		    </ul>
+		    
+		    <!-- Пагинация -->
+		    <ul class="pagination-list">
+			    <li class="pagination-item"><a href="#">1</a></li>
+			    <li class="pagination-item pagination-item-current"><a>2</a></li>
+			    <li class="pagination-item"><a href="#">3</a></li>
+			    <li class="pagination-item"><a href="#">4</a></li>
+		    </ul>
+	    </section>
+	    
+    </main>
+    
+    <footer class="main-footer">
+	    <p class="footer-contacts">
+        	Барбершоп «Бородинский»<br>
+			Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+			<a href="map.html">Как нас найти?</a><br>
+			Телефон: +7 (812) 666-02-66
+      	</p>
+      	
+      	<div class="footer-social">
+	      	<b>Давайте дружить!</b>
+	      	<ul>
+		      	<li><a href="#" class="social-button">Вконтакте</a></li>
+		      	<li><a class="social-button" href="#">Фейсбук</a></li>
+			  	<li><a class="social-button" href="#">Инстаграм</a></li>
+			</ul>
+      	</div>
+      	
+      	<p class="footer-copyright">
+	      	<b>Разработано:</b>
+	      	<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
+      	</p>
+    </footer>
+    
+    <!-- Попап для входа в личный кабинет -->
+	<section class="modal modal-login">
+		<h2>Личный кабинет</h2>
+		<p>Введите свой логин и пароль.</p>
+		<!-- Здесь будет форма -->
+		<!-- Иконка для закрытия окна -->
+		<span class="modal-close">x</span>
+	</section>
+    
+  </body>
+</html>
