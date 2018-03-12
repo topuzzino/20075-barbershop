@@ -5,12 +5,10 @@
     <title>Барбершоп "Бородинский"</title>
   </head>
   <body>
-
+  	<!-- Header -->
     <header class="main-header">
 	    <nav class="main-navi">
-		    <!-- Зачем нужен контейнер <a> для логотипа? -->
 		    <a class="main-header-logo">
-			    <!-- Вопреки макету мы разметим логотип на главной странице так же, как и на внутренних – внутри шапки -->
 			    <img src="img/logo-barbershop.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
 			</a>
 		    <ul class="site-navigation">
@@ -20,11 +18,11 @@
 			    <li><a href="catalog.html">Магазин</a></li>
 			    <li><a href="contact.html">Контакт</a></li>
 		    </ul>
-		    <!-- Сейчас в макете только кнопка входа. 
-			     Когда пользоватеть залогинится, могут появиться дополнительные ссылки и кнопки. 
-			     Неупорядоченный список подойдет для этого элемента -->
+		    <!-- Неупорядоченный список потому что после того, как пользователь залогинится, могут появиться дополнительные ссылки и кнопки -->
 		    <ul class="user-navigation">
-			    <li class="login-link">Вход</li>
+			    <li class="login-link">
+			    	<a href="login.html" class="login-link">Вход</a>
+			    </li>
 		    </ul>
 	    </nav>
     </header>
@@ -50,10 +48,9 @@
 		    </ul>
 	    </section>
 	    
-	    <!-- Почему только новости обворачиваем в <section>, а не весь светлый блок вместе с фотогалереей? -->
+	    <!-- Новости -->
 	    <section class="news">
 		    <h2>Новости</h2>
-		    <!-- Почему лента новостей списком? Почему не <article>? -->
 		    <ul class="news-list">
 				<li class="news-item">
 					<p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
@@ -70,15 +67,10 @@
 	    <!-- Фотогалерея -->
 	    <section class="gallery">
         	<h2>Фотогалерея</h2>
-        	<!-- Почему здесь используется <figure>, а не <img>. <figure> как контейнер для картинок -->
-        	<figure class="gallery-content">
-        		<!-- Фотографию обернем ссылкой, так как клик по изображению открывает его полноразмерную версию -->
-        		<a href="#"><img src="img/gallery.jpg" width="286" height="164" alt="Интерьер"></a>
-        	</figure>
-        	<!-- Кнопки переключения фотографий разметим тегами <span> -->
-        	<!-- Почему gallery-button-back - это класс, а не id? Он же один на страницу -->
-        	<span class="button gallery-button gallery-button-back">Назад</span>
-        	<span class="button gallery-button gallery-button-next">Вперед</span>
+        	<!-- Фотография обернута ссылкой, так как клик по изображению открывает его полноразмерную версию -->
+        	<a href="#"><img class="gallery-content" src="img/gallery.jpg" width="286" height="164" alt="Интерьер"></a>
+        	<button class="button gallery-button gallery-button-back">Назад</button>
+        	<button class=" button gallery-button gallery-button-next">Вперед</button>
         </section>
         
         <section class="contacts">
@@ -100,7 +92,14 @@
         <section class="appointment">
 	        <h2>Записаться</h2>
 	        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-	        <!-- Здесь будет форма -->
+	        <!-- Форма для бронирования -->
+	        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+		        <label class="appointment-item">Дата<input type="date" name="date" value="" placeholder="08.10.2017"></label>
+		        <label class="appointment-item">Время<input type="time" name="time" value="" placeholder="10:00"></label>
+		        <label class="appointment-item">Ваше имя<input type="text" name="name" value="" placeholder="Борода"></label>
+		        <label class="appointment-item">Телефон<input type="tel" name="phone" placeholder="+7 123 456-78-90"></label>
+		        <button type="submit" class="button">Отправить</button>
+	        </form>
         </section>
     </main>
     
@@ -127,22 +126,27 @@
       	</p>
     </footer>
     
-    <!-- На главной странице есть два всплывающих окна. Такие окна называются попапы. 
-	     Добавим для них разметку. Она будет расположена в body после разметки остального 
-	     содержимого главной страницы. -->
 	<!-- Первый попап для входа в личный кабинет -->
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите свой логин и пароль.</p>
-		<!-- Здесь будет форма -->
+		<!-- Форма для входа в личный кабинет -->
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<label>Логин<input type="text" name="login" placeholder="Логин"></label>
+			<label>Пароль<input type="text" name="password" placeholder="Пароль"></label>
+			<label><input type="checkbox" name="remember" checked="">Запомните меня</label>
+			<a class="forgot-password" href="#">Я забыл пароль</a>
+			<button class="button" type="submit">Войти</button>
+		</form>
 		<!-- Иконка для закрытия окна -->
-		<span class="modal-close">x</span>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 	
 	<!-- Второй попап для карты -->
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<span class="modal-close">x</span>
+		<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+		<button class="button modal-close visually-hidden" type="button">Закрыть</button>
 	</section>
 
   </body>
