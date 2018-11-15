@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url("img/header-image.jpg");
+  background-image: url("../img/header-image.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ body {
 .inner-page {
   color: #000000;
   background-color: #f9f6f3;
-  background-image: url("img/background-noise.jpg");
+  background-image: url("../img/background-noise.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -148,7 +148,7 @@ a {
 .index-columns {
   color: #000000;
   background-color: #f8f5f2;
-  background-image: url("img/background-noise.jpg");
+  background-image: url("../img/background-noise.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 
@@ -355,7 +355,7 @@ a {
 .main-footer {
   color: #ffffff;
   background-color: #212121;
-  background-image: url("img/background-noise-dark.jpg");
+  background-image: url("../img/background-noise-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 
@@ -413,7 +413,7 @@ a {
 .modal {
   color: #000000;
   background-color: #f8f3f0;
-  background-image: url("img/background-noise.jpg");
+  background-image: url("../img/background-noise.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
