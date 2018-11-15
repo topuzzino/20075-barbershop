@@ -7,19 +7,19 @@
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
   </head>
+
   <body>
-  	<!-- Header -->
     <header class="main-header">
-	    <nav class="main-navi">
+	    <nav class="main-navigation">
 		    <a class="main-header-logo">
 			    <img src="img/logo-barbershop.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
-			</a>
-		    
-		    <!-- Дополнительная обертка, которая должна тянутьcя на всю ширину, 
+        </a>
+
+		    <!-- Дополнительная обертка, которая должна тянутьcя на всю ширину,
 			     иметь черный фон и содержать в себе список с меню и список с пользовательских входом. -->
-		    <div class="main-navi-wrapper">
+		    <div class="main-navigation-wrapper">
 			    <!-- Еще одна обертка, чтобы выстроить два списка в соответствии с макетом -->
-			    <div class="header-container">
+			    <div class="container">
 				    <ul class="site-navigation">
 					    <li><a href="info.html">Информация</a></li>
 					    <li><a href="news.html">Новости</a></li>
@@ -37,8 +37,8 @@
 			</div>
 	    </nav>
     </header>
-    
-    
+
+
     <main class="container">
 	    <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 	    <section class="features">
@@ -58,7 +58,7 @@
 		        </li>
 		    </ul>
 	    </section>
-	    
+
 	    <!-- Новости -->
 	    <div class="index-columns"> <!-- Обертка добавлена при стилизации, т.к. общий фон -->
 		    <section class="news">
@@ -75,7 +75,7 @@
 	        	</ul>
 	        	<a href="news.html" class="button">Все новости</a>
 		    </section>
-	    
+
 		    <!-- Фотогалерея -->
 		    <section class="gallery">
 	        	<h2>Фотогалерея</h2>
@@ -85,7 +85,7 @@
 	        	<button class=" button gallery-button gallery-button-next">Вперед</button>
 	        </section>
 	    </div>
-        
+
         <div class="index-columns"> <!-- Обертка добавлена при стилизации, т.к. общий фон -->
 	        <section class="contacts">
 		        <h2>Контактная информация</h2>
@@ -102,7 +102,7 @@
 	        	<a href="map.html" class="button">Как проехать</a>
 	        	<a href="contacts.html" class="button">Обратная связь</a>
 	        </section>
-        
+
 	        <section class="appointment">
 		        <h2>Записаться</h2>
 		        <p class="appointment-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
@@ -117,16 +117,16 @@
 	        </section>
 	    </div>
     </main>
-    
+
     <footer class="main-footer">
-	    <div class="footer-container">
+	    <div class="container">
 		    <p class="footer-contacts">
 	        	Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 				<a href="map.html">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 	      	</p>
-	      	
+
 	      	<div class="footer-social">
 		      	<b>Давайте дружить!</b>
 		      	<ul>
@@ -135,14 +135,14 @@
 				  	<li><a class="social-button" href="#">Инстаграм</a></li>
 				</ul>
 	      	</div>
-	      	
+
 	      	<p class="footer-copyright">
 		      	<b>Разработано:</b>
 		      	<a href="https://htmlacademy.ru" class="button">HTML Academy</a>
 	      	</p>
 	    </div>
     </footer>
-    
+
 	<!-- Первый попап для входа в личный кабинет -->
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
@@ -152,13 +152,13 @@
 			<label>Логин<input type="text" name="login" placeholder="Логин"></label>
 			<label>Пароль<input type="text" name="password" placeholder="Пароль"></label>
 			<label class="login-checkbox"><input type="checkbox" name="remember" checked="">Запомните меня</label>
-			<a class="forgot-password" href="#">Я забыл пароль</a>
+			<a class="restore" href="#">Я забыл пароль</a>
 			<button class="button" type="submit">Войти</button>
 		</form>
 		<!-- Иконка для закрытия окна -->
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
-	
+
 	<!-- Второй попап для карты -->
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
